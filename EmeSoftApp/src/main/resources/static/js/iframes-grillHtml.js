@@ -67,7 +67,7 @@ $(document).ready(function() {
     $("#btnGenerarOrdenMantto").click(function(e) {
 
         var frame = $('#FrameId');
-        var url = 'OrdMaintenanceGrid.html';
+        var url = 'templates/OrdMaintenanceGrid.html';
         var actual = $('#FrameId');
         var url1 = actual.attr('src');
         if (url != url1) {
@@ -93,6 +93,8 @@ $(document).ready(function() {
             }
         }
     });
+
+
 
     $('#inputGroupFile01').change(function(e) {
 
@@ -135,3 +137,10 @@ $(document).ready(function() {
 
 
 });
+// selecciona tecnico y pone valor de id tenico gridOrden Mantto
+function ShowtecnicoId() {
+
+    var cod = document.getElementById("ShowNombreUsuarioOrden").value;
+    $("#ShowIdUsuario").val(cod);
+
+}
